@@ -1,0 +1,236 @@
+{
+    box-sizing: border-box;
+}
+
+* { /*Нормализация размеров элементов*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-conteiner {
+    display: flex;
+    flex-wrap: wrap;
+    border: 10px solid #7f00ff; /*Корневой контейнер выделили обводкой 10px*/
+    gap: 13px;
+}
+
+.flex-item { /*Для каждого!!! flex элемента "flex-item" добавлены стили - цвет,ширина,размещение ЦИФРЫ в блоке */
+    padding: 60px;
+    font: 900 60px "Roboto", sans-serif;
+    color: #fff;
+    text-align: center;
+    text-shadow: 4px 2px 0 rgba(0, 0, 0, 0);
+    width: calc(25% - 10px);
+
+}
+
+.item-1 { /*Цвета для блока*/
+    background-image: linear-gradient(45deg, #ff8177, #cf556c);
+}
+
+.item-2 {
+    background: linear-gradient(45deg, #84fab0, #8fd3f4);
+}
+
+.item-3 {
+    background: linear-gradient(45deg, #a6c0fe, #f68084);
+}
+
+.item-4 {
+    background: linear-gradient(45deg, #d4fc79, #96e6a1);
+}
+
+.item-5 {
+    background: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+
+.item-6 {
+    background: linear-gradient(45deg, #a18cd1, #fbc2eb);
+}
+
+.item-7 {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.item-8 {
+    background: linear-gradient(45deg, #e1eec3, #f05053);
+}
+
+.flex-item{
+    font-size: 16px;
+    text-shadow: 2px 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*.flex-conteiner{
+    display: flex;*/
+   /* justify-content: center;*/ /*Равномерно распределяет контейнеры вдоль всей оси*/
+   /* flex-wrap: wrap; *//*Разрешает переносить элементы на другую строку*/
+    /*flex-wrap: wrap-reverse; *//*Разрешает переносить элементы на другую строку в обратном порядке*/
+    /* flex-direction: row;*/ /*Значеие по умолчанию слева на право*/
+    /*height: 100vh;*/ /*Растягивает главный блоки на всю высоту страницы*/
+   /* height: 500px;*/ /*высота основного блока-контйнера*/
+    /*flex-flow: column wrap;*/ /*Размещение элементов вертикально и переносит на новый ряд если в текущем мало места*/
+   /* min-height: 100vh;*//* По высоте элементы всю свободную высоту flex conteiner (растягиваются на всю длинну поперечной оси), а по ширине только объемом текста*/
+    /*flex-direction: column;*/ /*Основная ось располагается вертикально и элементы сверху вниз*/
+    /*flex-direction: column-reverse;*/ /*Меняет направление оси с низу вверх*/
+    /*flex-direction: row-reverse;*/ /*Меняет направление оси с право на лево*/
+    /*padding: 5px;*/
+    /*gap: 15px;*/ /*Отступ между элементами*/
+    /*align-items: center;*//* выравнивание вдоль поперечной оси*/
+    /*align-content: stretch;*/ /*выравнивание многострочного контента*/
+    /*align-items: flex-start;*/
+   /* flex-direction: column;*/
+    /*min-height: 100vh;*/
+    /*background: linear-gradient(45deg,greenyellow,#fbc2eb, rosybrown);*/
+    /*padding: 1em;*/
+/*}*/
+/*aside{
+    min-width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}*/
+
+
+/*.flex-item{
+    width: 300px;
+    min-height: 180px;
+}*/
+
+/*.flex-conteiner{
+    display: flex;
+   !* justify-content: center;*!
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 1em;
+}*/
+
+/*.content{
+    flex: 1;
+}*/
+/*main {
+    display: flex;
+    flex: 1;
+}
+
+@media screen and (max-width: 650px) {
+    main {
+        flex-direction: column;
+    }
+}
+
+section{
+    order: -1;
+}
+
+aside {
+    flex: 1;
+}
+
+section {
+    flex: 3;
+}*/
+
+/*.item-2 { !*Создадим из второго элемента flex контейнер*!
+    align-self: center; !*Разместили по центру основного контейнера*!
+    display: flex; !*Задали второму элементу свойства flex контейнера*!
+    justify-content: center; !*Разместили элементы по центру 2-го контейнера *!'
+}*/
+
+/*.flex-item{
+!*    width: 300px;*!
+!*    width: 33.33%;*!
+    flex-grow: 1;
+     !* flex: 1;*!
+    flex-basis: 100px;
+    !*width: 200px;*!
+ }*/
+/*.item-3 {
+    flex-grow: 5;
+}*/
+/*.inner-item-1{
+    background-color: gray;
+}
+.inner-item-2{
+    background-color: darkred;*/
+/*}*/
+
+/*@media screen and (max-width: 650px){*/ /*Если ширина окна меньше 650px, то макет в одну колонку*/
+/*  .flex-conteiner{
+      flex-direction: column;
+  }*/
+
+/* .item-2{
+     order: -1;
+ }*/
+/*}*/
+
+
+/*.item-1{*/
+/*    order: 1;*/ /*По умолчанию у всех элементов order: 0; Когда мы присваиваем 1, то этот элемент перемещается в право, математическое расположение 0,..0,1*/
+/*}*/
+/*.item-7{
+    order: -1;
+}*/
+/*.item-1{
+    flex-grow: 1; !*Определяем пропорцию распределения пространства*!
+}*/
+
+/*.item-2{*/
+/*    flex-shrink: 2;*/ /*Отдавать свободное пространство соседним элементам, чем больше значение тем больше отдает*/
+/*}*/
+/*.item-3{
+    flex-shrink: 3;
+}*/
+
+/*.item-1{
+    align-self: stretch;
+}
+
+.item-2{
+    align-self: flex-start;
+}
+
+.item-3{
+    align-self: center;
+}
+
+.item-4{
+    align-self: flex-end;
+}
+
+.item-5{
+    align-self: baseline;
+}
+
+.item-6{
+    align-self: baseline;
+    font-size: 100px;
+}*/
+
+/*.flex-item {
+  width: 200px;*! !*Добавляем совйство width (ширина строчных блоков 200px) для всех дочерних элементов (цифр 1-8) (flex-item) Если это свойство не задано то происходит растягивание по всей ширине странице*!
+    !*height: 100px;*! !*Высота строчных блоков*!
+    !*width: calc(33.33% - 10px);*!!* Убираем 10px от общей ширины*!
+    !*margin: 5px; *!!*Отступы между элементами 5 px*!
+}*/
+
+/*.item-2{
+    font-size: 150px;
+}
+
+.item-4{
+    font-size: 100px;
+}*/
+
+/*.flex-item{*/ /*Убираем пустое пространство*/
+/*   flex: 1;
+}*/
+
+/*@media screen and (max-width: 650px){*/ /*Например если надо для мобильного устройства то мы переопределим */
+/*.flex-conteiner {
+    flex-direction: column; */
+/*значение flex-conteiner* /
+   }
+}
